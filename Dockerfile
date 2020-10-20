@@ -13,5 +13,5 @@ RUN apt-get install -y lsof
 RUN apt-get install -y inotify-tools
 RUN apt-get install -y sysstat
 RUN apt-get install -y build-essential
-RUN echo "source /Users/jimmwo/bash_extra" >> /root/.bashrc
-ADD bash_extra /Users/jimmwo/bash_extra CMD ["/bin/bash"]
+RUN echo "source /Users/jimmwo/www/docker-test/bash_extra" >> /root/.bashrc
+ADD bash_extra /Users/jimmwo/www/docker-test/bash_extra CMD ["/bin/bash"]
