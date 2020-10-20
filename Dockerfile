@@ -14,4 +14,5 @@ ENV DEBIAN_FRONTEND noninteractive
 #RUN apt-get install -y sysstat
 #RUN apt-get install -y build-essential
 RUN echo "source /bash_extra" >> /root/.bashrc
-ADD bash_extra /bash_extra CMD ["/bin/bash"]
+ADD bash_extra /bash_extra
+CMD ["/bin/bash"]
